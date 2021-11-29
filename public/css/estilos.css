@@ -1,0 +1,613 @@
+html{
+    background-color: rgb(240, 240, 240);
+    scroll-behavior: smooth;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(45, 50, 60, 0.85);
+}
+
+a:hover{
+    color: rgb(210,182,230)
+}
+
+
+/*HEADER*/
+
+h1{
+    margin: 0;
+}
+
+header{
+    background-color: rgb(240, 240, 240);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 13vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: fixed;
+    z-index: 2;
+}
+
+header nav{
+    width: 90%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0%;
+}
+
+#menu{
+    width: 40vh;
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-inline-start: 0px;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.85);
+}
+
+#iconos{
+    width: 10vh;
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#icon{
+    width: 20px;
+    height: 20px;
+    margin: 2%;
+}
+
+
+
+#logo{
+    width: 6vw;
+    height: 9vh
+}
+
+
+
+/*MAIN*/
+
+
+/*BANNER*/
+
+#banner{
+width: 100%;
+height: 87vh;
+margin: 2px;
+}
+
+#banner>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#texto_banner{
+    position:absolute;
+    height: 60%;
+    width: 30%;
+    top: 25vh;
+    left : 12vw;
+    z-index: 1;
+}
+
+h1{
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.85);
+    font-size: 1.8vw;
+    line-height: 1.88em;
+    background-color: #fff;
+    display: inline
+}
+
+#texto_banner>p{
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.85);
+    font-size: 1.8vw;
+    line-height: 1.88em;
+    background-color: #fff;
+    display: inline
+}
+
+#texto_banner>a>input{
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.85);
+    font-size: 15px;
+    border-radius: 100px;
+    padding: 15px 32px;
+    display: inline-block;
+    border: none;
+    margin-block-start: 10%;
+    margin-left: 10%;
+}
+
+#texto_banner>a>input:hover{  
+    background-color: rgb(240, 240, 240, 0.8);
+    ;
+}
+
+
+/*PROGRAMAS*/
+
+#programas{
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#programas>h2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60,0.97);
+    font-size: 2vw;
+}
+
+#sec_programa{
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.sec_programas>h3{
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.99);
+}
+
+.sec_programas{
+    margin: 1.5%; 
+    width: 22%;
+    height: 60%;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.85);
+    font-size: 1.25vw;
+}
+
+
+
+/*SABER MAS*/
+
+#saber_mas{
+    height: 50vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255,201,252,1) 0%, rgba(255,180,253,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#saber_mas>h2{
+    width: 61%;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.99);
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+#saber_mas>a{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    text-decoration: none;
+}
+
+#saber_mas>a>input{
+    width: 40%;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.99);
+    border-radius: 100px;
+    padding: 15px 32px;
+    display: inline-block;
+    border: none;
+    margin-block-start: 10%;
+    margin-left: 20%;
+    margin: 0%;
+}
+
+#saber_mas>a>input:hover{
+    background-color: rgb(240, 240, 240, 0.8);
+    ;
+}
+
+/*NUESTRA MISION*/
+
+#mision{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(150,145,150);
+}
+
+#mision_texto{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#mision_texto>h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.99);
+    font-size: 2vw;
+}
+
+#mision_texto>p{
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: center;
+    color: rgba(250,242,250);
+    font-family: 'DM Sans', sans-serif;
+}
+
+#mision_texto>a{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-top: 5%;
+    text-decoration: none;
+}
+
+#mision_texto>a>input{
+    padding: 0%;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.99);
+    border-radius: 100px;
+    padding: 15px 32px;
+    display: inline-block;
+    border: none;
+    margin-block-start: 10%;
+    margin-left: 20%;
+    margin: 0%;
+}
+
+#mision_texto>a>input:hover{
+    background-color: rgb(240, 240, 240, 0.8);
+    ;
+}
+
+#video{
+    height: 50vh;
+    width: 50vw;
+}
+
+#mi_video{
+    height: 100%;
+    width: 100%;
+}
+
+
+/*NUESTROS EQUIPO*/
+
+#equipo{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+#equipo>h2{
+    display: flex;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.99);
+    font-size: 2vw;
+}
+
+#div_equipo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#div_equipo>div{
+    width: 27%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.imagen{
+    display: flex;
+    justify-content: center;
+    height: 130px;
+    width: 130px;
+}
+
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.99);
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.85);
+}
+
+/*CONTACTO*/
+
+#contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 80vh;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255,201,252,1) 0%, rgba(255,180,253,1) 100%);
+}
+
+#info{
+    display: flex;
+    height: 100%;
+    width: 50%;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 12%;
+}
+
+#info>h2{
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.99);
+    font-size: 2vw;
+}
+
+#info>p{
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.85);
+    width: 100%;
+}
+
+#formulario{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.entrada{
+    background-color: inherit;
+    border-top: inherit;
+    border-left: inherit;
+    border-right: inherit;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.85);
+}
+
+#corto{
+    width: 40%;
+    padding: 2.5%;
+}
+
+#largo{
+    width: 81%;
+    padding: 2.5%;
+}
+
+#mas_largo{
+    padding: 2.5%;
+    width: 81%;
+    resize: none;
+}
+
+#boton{
+    width: 30%;
+    font-family: 'DM Sans', sans-serif;
+    color: rgb(45, 50, 60, 0.99);
+    border-radius: 100px;
+    padding: 15px 32px;
+    display: inline-block;
+    border: none;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+
+#boton:hover{
+    background-color: rgb(240, 240, 240, 0.8);
+    ;
+}
+
+/*FOOTER*/
+
+footer{
+    margin-top: 2%;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/*RESPONSIVE CELULAR*/
+
+
+@media (max-width: 600px){
+
+    /*nav*/
+    #logo{
+        display: none;
+    }
+    #iconos{
+        display: none;
+    }
+    header nav{
+        justify-content: center;
+    }
+
+    /*banner*/
+
+    #texto_banner{
+        height: 80%;
+        width: 80%;
+    }
+
+    h1{
+        font-size: 5vw;
+    }
+    
+    #texto_banner>p{
+        font-size: 5vw;
+    }
+
+    #texto_banner>a{
+        display: flex;
+        justify-content: center;
+    }
+    #texto_banner>a>input{
+        margin-left: 0%;
+    }
+
+    /*PROGRAMAS*/
+
+    #programas{
+        height: 260vw;
+        align-content: flex-start;
+    }
+
+    #programas>h2{
+        padding-top: 2%;
+        height: 10%;
+        font-size: 130%;
+    }
+
+    .sec_programas{
+        width: 100%;
+        font-size: 4vw;
+        height: 0%;
+    }
+
+    /*SABERMAS*/
+
+    #saber_mas>h2{
+        font-size: 130%;
+    }
+
+    #saber_mas>a{
+        padding-top: 5%;
+    }
+
+    #saber_mas>a>input{
+        width: 80%;
+    }
+
+    /*MISION*/
+
+    #mision{
+        height: 120vh;
+        flex-direction: column;
+    }
+
+    #mision_texto>h2{
+        font-size: 130%;
+    }
+
+    #mision_texto>p{
+        margin-top: 20%;
+        margin-bottom: 20%;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    #video{
+        width: 100%;
+        
+    }
+
+    /*NOSOTROS*/
+
+    #equipo>h2{
+        font-size: 130%;
+    }
+
+    #div_equipo>div{
+        width: 100%;
+    }
+
+    /*CONTACTO*/
+
+    #contacto{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    #info{
+        padding-left: 2%;
+        width: 100%;
+    }
+
+    #info>h2{
+        font-size: 130%;
+    }
+
+    #formulario{
+        width: 100%;
+        padding-left: 10%;
+    }
+
+    #boton{
+        width: 40%;
+    }
+
+}
+
